@@ -6,7 +6,7 @@ export const Navigation = (props) => {
       id="menu" 
       className="navbar navbar-default navbar-fixed-top"
       data-aos="fade-down" 
-      data-aos-duration="1000" 
+      data-aos-duration="1500" 
     >
       <div className="container">
         <div className="navbar-header">

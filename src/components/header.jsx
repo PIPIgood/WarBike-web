@@ -16,7 +16,7 @@ export const Header = (props) => {
                   <span></span>
                 </h1>
                 <p 
-                  data-aos="fade-up" 
+                  data-aos="zoom-out" 
                   data-aos-delay="200"
                 >
                   {props.data ? props.data.paragraph : "Loading"}
