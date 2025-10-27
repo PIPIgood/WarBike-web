@@ -23,7 +23,7 @@ export const Header = (props) => {
                 </p>
 
                 <a
-                  href="#Team"
+                  href="#team"
                   className="btn btn-custom btn-lg page-scroll"
                   data-aos="zoom-in" 
                   data-aos-delay="800"
