@@ -2,7 +2,12 @@ import React from "react";
 
 export const Navigation = (props) => {
   return (
-    <nav id="menu" className="navbar navbar-default navbar-fixed-top">
+    <nav 
+      id="menu" 
+      className="navbar navbar-default navbar-fixed-top"
+      data-aos="fade-down" 
+      data-aos-duration="1000" 
+    >
       <div className="container">
         <div className="navbar-header">
           <button
@@ -27,41 +32,41 @@ export const Navigation = (props) => {
           id="bs-example-navbar-collapse-1"
         >
           <ul className="nav navbar-nav navbar-right">
-             <li>
-              <a href="#features" className="page-scroll">
-                Carateristicas
-              </a>
-            </li>
-            <li>
-              <a href="#about" className="page-scroll">
-                War Bike
-              </a>
-            </li>
-            <li>
-              <a href="#services" className="page-scroll">
-                Conquista
-              </a>
-            </li>
-            <li>
-              <a href="#portfolio" className="page-scroll">
-                Compite
-              </a>
-            </li>
-            <li>
-              <a href="#testimonials" className="page-scroll">
-                Gana
-              </a>
-            </li>
-            <li>
-              <a href="#team" className="page-scroll">
-                QR
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="page-scroll">
-                Contacto
-              </a>
-            </li>
+              <li>
+                <a href="#features" className="page-scroll">
+                  Carateristicas
+                </a>
+              </li>
+              <li>
+                <a href="#about" className="page-scroll">
+                  War Bike
+                </a>
+              </li>
+              <li>
+                <a href="#services" className="page-scroll">
+                  Conquista
+                </a>
+              </li>
+              <li>
+                <a href="#portfolio" className="page-scroll">
+                  Compite
+                </a>
+              </li>
+              <li>
+                <a href="#testimonials" className="page-scroll">
+                  Gana
+                </a>
+              </li>
+              <li>
+                <a href="#team" className="page-scroll">
+                  QR
+                </a>
+              </li>
+              <li>
+                <a href="#contact" className="page-scroll">
+                  Contacto
+                </a>
+              </li>
           </ul>
         </div>
       </div>

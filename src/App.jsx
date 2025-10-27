@@ -12,6 +12,11 @@ import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
 
+
+import AOS from "aos";
+import "aos/dist/aos.css"; 
+
+
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
   speedAsDuration: true,
@@ -21,6 +26,12 @@ const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
   useEffect(() => {
     setLandingPageData(JsonData);
+
+    AOS.init({
+      duration: 1000, 
+      once: true,    
+    });
+
   }, []);
 
   return (

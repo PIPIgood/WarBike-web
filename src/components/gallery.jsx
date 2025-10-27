@@ -5,8 +5,12 @@ export const Gallery = (props) => {
     <div id="portfolio" className="text-center">
       <div className="container">
         <div className="row">
-       
-          <div className="col-xs-12 col-md-6">
+
+          <div 
+            className="col-xs-12 col-md-6" 
+            data-aos="zoom-in" 
+            data-aos-duration="1000"
+          >
             <div className="portfolio-text">
               <h2 style={{ color: "#d1a019", textAlign: "center" }}>
                 Compite con amigos
@@ -27,8 +31,12 @@ export const Gallery = (props) => {
               </div>
             </div>
           </div>
-    
-          <div className="col-xs-12 col-md-6">
+
+          <div 
+            className="col-xs-12 col-md-6" 
+            data-aos="fade-left" 
+            data-aos-duration="1000"
+          >
             {" "}
             <img src="img/Ranking.jpeg" className="img-responsive" alt="" />{" "}
           </div>
