@@ -1,29 +1,31 @@
-import React from "react";
-
 export const Services = (props) => {
+
   return (
+
     <div id="services" className="text-center">
       <div className="container">
-        <div className="section-title">
-          <h2>Our Services</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
-          </p>
-        </div>
         <div className="row">
-          {props.data
-            ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className="col-md-4">
-                  {" "}
-                  <i className={d.icon}></i>
-                  <div className="service-desc">
-                    <h3>{d.name}</h3>
-                    <p>{d.text}</p>
-                  </div>
+          <div className="col-xs-12 col-md-6">
+            {" "}
+            <img src="img/Mapa.png" className="img-responsive" alt="" />{" "}
+          </div>
+          <div className="col-xs-12 col-md-6">
+            <div className="service-text">
+              <h2 style={{ color: '#d1a019', textAlign: 'center' }}>Conquista territirios</h2>
+              <p style={{ color: '#d5d4d4ff', textAlign: 'center' }}>{props.data ? props.data.paragraph : "loading..."}</p>
+              <div className="list-style">
+                <div className="col-lg-6 col-sm-6 col-xs-12">
+                  <ul>
+                    {props.data
+                      ? props.data.Why.map((d, i) => (
+                        <li key={`${d}-${i}`}>{d}</li>
+                      ))
+                      : "loading"}
+                  </ul>
                 </div>
-              ))
-            : "loading"}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

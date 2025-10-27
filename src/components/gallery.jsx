@@ -1,33 +1,36 @@
-import { Image } from "./image";
 import React from "react";
 
 export const Gallery = (props) => {
   return (
     <div id="portfolio" className="text-center">
       <div className="container">
-        <div className="section-title">
-          <h2>Gallery</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
-          </p>
-        </div>
         <div className="row">
-          <div className="portfolio-items">
-            {props.data
-              ? props.data.map((d, i) => (
-                  <div
-                    key={`${d.title}-${i}`}
-                    className="col-sm-6 col-md-4 col-lg-4"
-                  >
-                    <Image
-                      title={d.title}
-                      largeImage={d.largeImage}
-                      smallImage={d.smallImage}
-                    />
-                  </div>
-                ))
-              : "Loading..."}
+       
+          <div className="col-xs-12 col-md-6">
+            <div className="portfolio-text">
+              <h2 style={{ color: "#d1a019", textAlign: "center" }}>
+                Compite con amigos
+              </h2>
+              <p style={{ color: "#d5d4d4ff", textAlign: "center" }}>
+                {props.data ? props.data.paragraph : "loading..."}
+              </p>
+              <div className="list-style">
+                <div className="col-lg-6 col-sm-6 col-xs-12">
+                  <ul>
+                    {props.data
+                      ? props.data.Why.map((d, i) => (
+                          <li key={`${d}-${i}`}>{d}</li>
+                        ))
+                      : "loading"}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div className="col-xs-12 col-md-6">
+            {" "}
+            <img src="img/Ranking.jpeg" className="img-responsive" alt="" />{" "}
           </div>
         </div>
       </div>

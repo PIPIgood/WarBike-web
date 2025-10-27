@@ -4,26 +4,28 @@ export const Testimonials = (props) => {
   return (
     <div id="testimonials">
       <div className="container">
-        <div className="section-title text-center">
-          <h2>What our clients say</h2>
-        </div>
         <div className="row">
-          {props.data
-            ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className="col-md-4">
-                  <div className="testimonial">
-                    <div className="testimonial-image">
-                      {" "}
-                      <img src={d.img} alt="" />{" "}
-                    </div>
-                    <div className="testimonial-content">
-                      <p>"{d.text}"</p>
-                      <div className="testimonial-meta"> - {d.name} </div>
-                    </div>
-                  </div>
+          <div className="col-xs-12 col-md-6">
+            {" "}
+            <img src="img/Gana.jpeg" className="img-responsive" alt="" />{" "}
+          </div>
+          <div className="col-xs-12 col-md-6">
+            <div className="testimonials-text">
+              <h2 style={{ color: '#d1a019', textAlign: 'center' }}>Gana premios especiales</h2>
+              <p style={{ color: '#d5d4d4ff', textAlign: 'center' }}>{props.data ? props.data.paragraph : "loading..."}</p>
+              <div className="list-style">
+                <div className="col-lg-6 col-sm-6 col-xs-12">
+                  <ul>
+                    {props.data
+                      ? props.data.Why.map((d, i) => (
+                        <li key={`${d}-${i}`}>{d}</li>
+                      ))
+                      : "loading"}
+                  </ul>
                 </div>
-              ))
-            : "loading"}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
