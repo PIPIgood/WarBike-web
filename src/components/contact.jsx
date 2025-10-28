@@ -39,7 +39,7 @@ export const Contact = (props) => {
     <div>
       <div id="contact">
         <div className="container">
-          <div className="col-md-8">
+          <div className="col-md-7">
             <div className="row">
               <div className="section-title">
                 <h2>Ponte en contacto</h2>
@@ -170,9 +170,9 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2023 Issaaf Kattan React Land Page Template. Design by{" "}
-            <a href="http://www.templatewire.com" rel="nofollow">
-              TemplateWire
+            &copy; 2025 War Bike Company{" "}
+            <a href="http://localhost:3000/#page-top" rel="nofollow">
+              War Bike
             </a>
           </p>
         </div>
