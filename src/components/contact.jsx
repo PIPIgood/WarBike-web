@@ -103,8 +103,8 @@ export const Contact = (props) => {
               <div className="col-12 ">
 
 
-                <div className="contact-item">
-                  <h3>Información de contacto</h3>
+                <div className="section-title">
+                  <h2>Buscanos</h2>
                   <p>
                     <span>
                       <i className="fa fa-map-marker"></i> Direccion
