@@ -194,7 +194,7 @@ hr {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   color: #fff;
-  background-color: #e8f40a;
+  background-color: #f2ff00cf;
   background-image: linear-gradient(to right, #087922 23%, #087922 50%);
   padding: 14px 34px;
   letter-spacing: 1px;
@@ -632,7 +632,7 @@ header .intro-text {
 
 #contact h3 {
   color: #fff;
-  margin-top: 80px;
+  margin-top: 100px;
   margin-bottom: 25px;
   padding-bottom: 20px;
   font-weight: 400;
