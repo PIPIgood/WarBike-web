@@ -445,7 +445,17 @@ header .intro-text {
   border-radius: 15px;
   box-shadow: 0 0 50px rgba(231, 156, 29, 0.5);
 }
+#services .services-image-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;   
+  gap: 15px;             
+}
+#services .services-image-container img {
 
+  margin: 0;
+  width: 48%;
+}
 
 /* Portfolio Section */
 #portfolio {
@@ -510,6 +520,7 @@ header .intro-text {
   box-shadow: 0 0 50px rgba(231, 156, 29, 0.5);
 }
 
+
 /* testimonials Section */
 #testimonials {
   background: linear-gradient(to right, #1c1c1c 20%, #000000 70%);
@@ -572,7 +583,17 @@ header .intro-text {
   border-radius: 15px;
   box-shadow: 0 0 50px rgba(231, 156, 29, 0.5);
 }
+#testimonials .testimonials-image-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;   
+  gap: 15px;             
+}
+#testimonials .testimonials-image-container img {
 
+  margin: 0;
+  width: 48%;
+}
 /* Team Section */
 #team {
   padding: 100px 0;

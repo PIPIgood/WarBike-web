@@ -7,12 +7,13 @@ export const Testimonials = (props) => {
         <div className="row">
           
           <div 
-            className="col-xs-12 col-md-6" 
+            className="col-xs-12 col-md-6 testimonials-image-container"
             data-aos="fade-right" 
             data-aos-duration="1000"
           >
             {" "}
             <img src="img/Gana.jpeg" className="img-responsive" alt="" />{" "}
+            <img src="img/Ganaa.jpeg" className="img-responsive" alt="" />{" "}
           </div>
          
           <div 

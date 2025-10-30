@@ -7,11 +7,12 @@ export const Services = (props) => {
         <div className="row">
 
           <div 
-            className="col-xs-12 col-md-6" 
+            className="col-xs-12 col-md-6 services-image-container"
             data-aos="fade-right"
             data-aos-duration="1000"
           >
             {" "}
+            <img src="img/Ganaa.png" className="img-responsive" alt="" />{" "}
             <img src="img/Mapa.png" className="img-responsive" alt="" />{" "}
           </div>
           
